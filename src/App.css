@@ -1,0 +1,80 @@
+p{
+  padding: 0;
+  margin: 0;
+}
+#container{
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  grid-template-rows: repeat(2,50vh);
+}
+#title{
+  font-size: 2rem;
+  background-color: lightgray;
+  border-radius: 0.3em;
+  padding: 0.5em 1em;
+  height: fit-content;
+  width: fit-content;
+  justify-self: center;
+  align-self: end;
+  position: relative;
+}
+#podium{
+  font-size: 2rem;
+  background: peru;
+  padding: 0.5em 1em;
+  height: fit-content;
+  width: fit-content;
+  border-radius: 0.3em;
+  justify-self: center;
+}
+#animation{
+  justify-self: center;
+  align-self: end;
+  display: flex;
+  position: relative;
+}
+#firstPlace,#secondPlace,#thirdPlace{
+  display: grid;
+  grid-template-rows: 2rem 1fr;
+  text-align: center;
+}
+#firstContent,#secondContent,#thirdContent{
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0 1.2rem;
+  padding-top: 1.2rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+#firstPlace{
+  position: relative;
+  z-index: 3;
+  align-self: flex-end;
+  height: 60vh;
+  width: 16vw;
+}
+#firstContent{
+  background: gold;
+}
+#secondPlace{
+  position: relative;
+  order: -1;
+  z-index: 2;
+  align-self: flex-end;
+  height: 50vh;
+  width: 18vw;
+}
+#secondContent{
+  background: silver;
+}
+#thirdPlace{
+  position: relative;
+  z-index: 1;
+  height: 40vh;
+  align-self: flex-end;
+  width: 18vw;
+}
+#thirdContent{
+  background: brown;
+}
