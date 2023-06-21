@@ -10,7 +10,7 @@ function App() {
   let handleClick = ()=>{
     titleControl.start({
       x:0,
-      y:"-260%"
+      y:"-30vh"
     })
     changeCheck(false)
     changeWait(false)
@@ -29,7 +29,7 @@ function App() {
         transition={{duration:0.3,ease:"easeOut"}}
         onClick={handleClick}
         >
-        Title
+        Click to start or replay (Title)
       </motion.div>
       <AnimatePresence>
         {check && <motion.div id='podium'
@@ -44,48 +44,50 @@ function App() {
       </AnimatePresence>
       {wait &&<div id='animation'>
       <motion.div id='firstPlace'
-        initial={{y:"120%"}}
-        animate={{y:["120%","0%","0%","0%"],scale:[1.2,1.2,1.2,1.02]}}
+        initial={{y:"150%"}}
+        animate={{y:["150%","0%","0%","0%"],scale:[1.4,1.4,1.4,1.02]}}
         transition={{duration:3,delay:6}}
       >
         <motion.div
           animate={{
-            rotate:[-50,0,0,50],
-            y:[0,20,20,0],
-            x:[-20,0,0,20]
+            x:[-30,30],
+            y:[-20,-20],
+            rotate:[-20,20]
           }}
-          transition={{repeat:Infinity,repeatType:'reverse',duration:1,ease:'linear'}}
+          transition={{
+            repeat:Infinity,repeatType:'reverse',ease:'linear',duration:0.7
+          }}
         >username</motion.div>
         <div id='firstContent'>
-          <img src="/vite.svg" alt="" />
+          <h1>1</h1>
           <p>2501</p>
           <p>12 out of 20</p>
         </div>
       </motion.div>
       <motion.div id='secondPlace'
         initial={{y:"120%",x:"100%"}}
-        animate={{y:["120%","0%","0%","0%"],x:["100%","100%","100%","0%"],scale:[1.2,1.2,1.2,1.02]}}
+        animate={{height:["60vh","60vh","60vh","50vh"],y:["120%","0%","0%","0%"],x:["100%","100%","100%","0%"],scale:[1.4,1.4,1.4,1.02]}}
         transition={{duration:3,delay:3}}
       >
         <motion.div
           
         >username</motion.div>
         <div id='secondContent'>
-          <img src="/vite.svg" alt="" />
+          <h1>2</h1>
           <p>2201</p>
           <p>10 out of 20</p>
         </div>
       </motion.div>
       <motion.div id='thirdPlace'
         initial={{y:"120%",x:"-100%"}}
-        animate={{y:["120%","0%","0%","0%"],x:["-100%","-100%","-100%","0%"],scale:[1.2,1.2,1.2,1.02]}}
+        animate={{height:["60vh","60vh","60vh","40vh"],y:["120%","0%","0%","0%"],x:["-100%","-100%","-100%","0%"],scale:[1.4,1.4,1.4,1.02]}}
         transition={{duration:3}}
       >
         <motion.div
           
         >username</motion.div>
         <div id='thirdContent'>
-          <img src="/vite.svg" alt="" />
+          <h1>3</h1>
           <p>1501</p>
           <p>9 out of 20</p>
         </div>
