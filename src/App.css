@@ -1,5 +1,5 @@
 body{
-  background-color: rgb(118, 123, 167);
+  background-color: rgb(98, 98, 107);
 }
 p{
   padding: 0;
@@ -57,8 +57,8 @@ p{
   position: relative;
   z-index: 3;
   align-self: flex-end;
-  height: 60vh;
-  width: 16vw;
+  height: 50vh;
+  width: 16rem;
 }
 #firstContent{
   background: gold;
@@ -68,8 +68,8 @@ p{
   order: -1;
   z-index: 2;
   align-self: flex-end;
-  height: 60vh;
-  width: 18vw;
+  height: 42vh;
+  width: 17rem;
 }
 #secondContent{
   background: silver;
@@ -77,9 +77,9 @@ p{
 #thirdPlace{
   position: relative;
   z-index: 1;
-  height: 60vh;
+  height: 34vh;
   align-self: flex-end;
-  width: 18vw;
+  width: 18rem;
 }
 #thirdContent{
   background: brown;

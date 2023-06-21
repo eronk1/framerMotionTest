@@ -66,7 +66,7 @@ function App() {
       </motion.div>
       <motion.div id='secondPlace'
         initial={{y:"120%",x:"100%"}}
-        animate={{height:["60vh","60vh","60vh","50vh"],y:["120%","0%","0%","0%"],x:["100%","100%","100%","0%"],scale:[1.4,1.4,1.4,1.02]}}
+        animate={{height:["50vh","50vh","50vh","42vh"],y:["120%","0%","0%","0%"],x:["100%","100%","100%","0%"],scale:[1.4,1.4,1.4,1.02]}}
         transition={{duration:3,delay:3}}
       >
         <motion.div
@@ -80,7 +80,7 @@ function App() {
       </motion.div>
       <motion.div id='thirdPlace'
         initial={{y:"120%",x:"-100%"}}
-        animate={{height:["60vh","60vh","60vh","40vh"],y:["120%","0%","0%","0%"],x:["-100%","-100%","-100%","0%"],scale:[1.4,1.4,1.4,1.02]}}
+        animate={{height:["50vh","50vh","50vh","34vh"],y:["120%","0%","0%","0%"],x:["-100%","-100%","-100%","0%"],scale:[1.4,1.4,1.4,1.02]}}
         transition={{duration:3}}
       >
         <motion.div
