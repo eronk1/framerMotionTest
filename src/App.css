@@ -1,5 +1,5 @@
 body{
-  background-color: rgb(98, 98, 107);
+  background-color: #292c35;
 }
 p{
   padding: 0;
@@ -41,9 +41,11 @@ p{
   display: grid;
   grid-template-rows: 3rem 1fr;
   text-align: center;
+  color:white;
 }
 #firstPlace:first-child,#secondPlace:first-child,#thirdPlace:first-child{
   font-size: 2rem;
+  
 }
 #firstContent,#secondContent,#thirdContent{
   font-size: 1.5rem;
@@ -52,6 +54,7 @@ p{
   padding-top: 1.2rem;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
+  color: black;
 }
 #firstPlace{
   position: relative;
