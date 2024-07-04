@@ -57,7 +57,7 @@ function App() {
           transition={{
             repeat:Infinity,repeatType:'reverse',ease:'linear',duration:0.7
           }}
-        >username</motion.div>
+        >cags2</motion.div>
         <div id='firstContent'>
           <h1>1</h1>
           <p>2501</p>
@@ -71,7 +71,7 @@ function App() {
       >
         <motion.div
           
-        >username</motion.div>
+        >eronk1</motion.div>
         <div id='secondContent'>
           <h1>2</h1>
           <p>2201</p>
@@ -85,7 +85,7 @@ function App() {
       >
         <motion.div
           
-        >username</motion.div>
+        >seonk1</motion.div>
         <div id='thirdContent'>
           <h1>3</h1>
           <p>1501</p>
